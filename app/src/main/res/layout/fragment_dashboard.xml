@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <Button
+        android:id="@+id/ibrahimPhoneInsertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ibrahimImageBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimPhoneInsertBtn" />
+
+    <Button
+        android:id="@+id/ButtonStart"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:onClick="selectSpeed"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonStop"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimPhoneInsertBtn"
+        app:layout_constraintVertical_bias="0.737"></Button>
+
+    <Button
+        android:id="@+id/ButtonStop"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:onClick="stopAnimation"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimPhoneInsertBtn"
+        app:layout_constraintVertical_bias="0.737"></Button>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/ibrahimSpeedOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="200px"
+            android:text="One" />
+
+        <RadioButton
+            android:id="@+id/ibrahimSpeedTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="200px"
+            android:text="Two" />
+
+        <RadioButton
+            android:id="@+id/ibrahimSpeedThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="200px"
+            android:text="Three" />
+
+        <RadioButton
+            android:id="@+id/ibrahimSpeedFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="200px"
+            android:text="Four" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
