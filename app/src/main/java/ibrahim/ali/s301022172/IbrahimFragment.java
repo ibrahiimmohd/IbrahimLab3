@@ -27,7 +27,7 @@ public class IbrahimFragment extends Fragment{
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_ibrahim, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
+        final TextView textView = root.findViewById(R.id.ibrahimTextIbraFragment);
 
         textView.setText("Ibrahim Ali 301022172");
 

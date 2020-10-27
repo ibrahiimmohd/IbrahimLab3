@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D8BFD8"
+    android:background="@color/bgColorS301022172Frag"
     tools:context=".S301022172Fragment">
 
 
@@ -30,7 +30,8 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="48dp"
         android:rotation="45"
-        android:text="Ibrahim"
+        style="@style/TxtDisplayS301022172Fragment"
+        android:text="@string/ibrahimTxtFirstName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:rotation="-45"
-        android:text="Ali"
+        style="@style/TxtDisplayS301022172Fragment"
+        android:text="@string/ibrahimTxtLastName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toEndOf="@+id/ibrahimFirstName"
@@ -53,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
-        android:text="Start"
+        android:text="@string/ibrahimTxtStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.266"
@@ -65,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginBottom="76dp"
-        android:text="Stop"
+        android:text="@string/ibrahimTxtStop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.336"

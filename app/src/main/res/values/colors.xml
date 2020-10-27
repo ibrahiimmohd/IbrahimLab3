@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="bgColorAliFrag">#F0F8FF</color>
+    <color name="bgColorIbrahimFrag">#FFF8DC</color>
+    <color name="bgColorS301022172Frag">#D8BFD8</color>
+
+    <color name="canvasColor">#FFFFFF</color>
+
+
+
 </resources>

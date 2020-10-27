@@ -36,14 +36,14 @@ public class ibrahimActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
+        BottomNavigationView navView = findViewById(R.id.ibrahimNavView);
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.ibrahimIbrahimFragment, R.id.ibrahimNavAliFragment, R.id.ibrahimNavS301022172Fragment)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.ibrahimNavHostFragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
@@ -80,10 +80,10 @@ public class ibrahimActivity extends AppCompatActivity {
 
     public void selectSpeed(View view){
 
-        rd1 = (RadioButton) findViewById(R.id.ibrahimSpeedOne);
-        rd2 = (RadioButton) findViewById(R.id.ibrahimSpeedTwo);
-        rd3 = (RadioButton) findViewById(R.id.ibrahimSpeedThree);
-        rd4 = (RadioButton) findViewById(R.id.ibrahimSpeedFour);
+        rd1 = (RadioButton) findViewById(R.id.ibrahimSpeed8s);
+        rd2 = (RadioButton) findViewById(R.id.ibrahimSpeed6s);
+        rd3 = (RadioButton) findViewById(R.id.ibrahimSpeed4s);
+        rd4 = (RadioButton) findViewById(R.id.ibrahimSpeed2s);
 
         if(rd1.isChecked()){
             startAnimation(650);

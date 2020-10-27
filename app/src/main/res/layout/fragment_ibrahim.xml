@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8DC"
+    android:background="@color/bgColorIbrahimFrag"
     tools:context=".IbrahimFragment">
 
     <TextView
-        android:id="@+id/text_dashboard"
+        android:id="@+id/ibrahimTextIbraFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        style="@style/TxtDisplayIbrahimFragment"
         app:layout_constraintTop_toTopOf="@+id/ibrahimCanvas"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="16dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ibrahimImgIbraFragment"
         android:layout_width="151dp"
         android:layout_height="135dp"
         android:gravity="center"
@@ -26,14 +25,14 @@
         app:layout_constraintBottom_toTopOf="@+id/ibrahimRadioGroupPaint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimTextIbraFragment"
         app:layout_constraintVertical_bias="0.121" />
 
     <ibrahim.ali.s301022172.CanvasView
         android:id="@+id/ibrahimCanvas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/canvasColor"
         tools:layout_editor_absoluteX="-34dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -43,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
         android:gravity="center"
-        android:text="Clear Canvas"
+        android:text="@string/ibrahimTxtClearCanvas"
         app:layout_constraintBottom_toBottomOf="@+id/ibrahimCanvas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.814"
@@ -56,7 +55,7 @@
         android:layout_marginBottom="76dp"
         android:gravity="center"
         android:onClick="selectPaintBrush"
-        android:text="Select Paint/Brush"
+        android:text="@string/ibrahimTxtSelectPB"
         app:layout_constraintBottom_toBottomOf="@+id/ibrahimCanvas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.182"
@@ -76,14 +75,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
-            android:text="10ft"></RadioButton>
+            android:text="@string/ibrahimTxt10ft"></RadioButton>
 
         <RadioButton
             android:id="@+id/ibrahimBrush20ft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
-            android:text="20ft"></RadioButton>
+            android:text="@string/ibrahimTxt20ft"></RadioButton>
 
 
         <RadioButton
@@ -91,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
-            android:text="30ft"></RadioButton>
+            android:text="@string/ibrahimTxt30ft"></RadioButton>
     </RadioGroup>
 
     <RadioGroup
@@ -108,21 +107,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
-            android:text="Black" />
+            android:text="@string/ibrahimTxtBlack" />
 
         <RadioButton
             android:id="@+id/ibrahimPaintGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
-            android:text="Green" />
+            android:text="@string/ibrahimTxtGreen" />
 
         <RadioButton
             android:id="@+id/ibrahimPaintRed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
-            android:text="Red" />
+            android:text="@string/ibrahimTxtRed" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

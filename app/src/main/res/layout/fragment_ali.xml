@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F8FF"
+    android:background="@color/bgColorAliFrag"
     tools:context=".AliFragment">
 
     <Button
         android:id="@+id/ibrahimPhoneInsertBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Call"
+        android:text="@string/ibrahimTxtCall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,25 +27,25 @@
         app:layout_constraintTop_toBottomOf="@+id/ibrahimPhoneInsertBtn" />
 
     <Button
-        android:id="@+id/ButtonStart"
+        android:id="@+id/ibrahimButtonStart"
         android:layout_width="89dp"
         android:layout_height="wrap_content"
         android:onClick="selectSpeed"
-        android:text="Start"
+        android:text="@string/ibrahimTxtStart"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ButtonStop"
+        app:layout_constraintEnd_toStartOf="@+id/ibrahimButtonStop"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimPhoneInsertBtn"
         app:layout_constraintVertical_bias="0.737"></Button>
 
     <Button
-        android:id="@+id/ButtonStop"
+        android:id="@+id/ibrahimButtonStop"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="96dp"
         android:onClick="stopAnimation"
-        android:text="Stop"
+        android:text="@string/ibrahimTxtStop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimPhoneInsertBtn"
@@ -55,37 +55,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/ButtonStart"
+        app:layout_constraintBottom_toTopOf="@+id/ibrahimButtonStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
-            android:id="@+id/ibrahimSpeedOne"
+            android:id="@+id/ibrahimSpeed8s"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="200px"
-            android:text="One" />
+            style="@style/TxtDisplayAliFragment"
+            android:text="@string/ibrahimTxtSpeed8s" />
 
         <RadioButton
-            android:id="@+id/ibrahimSpeedTwo"
+            android:id="@+id/ibrahimSpeed6s"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="200px"
-            android:text="Two" />
+            style="@style/TxtDisplayAliFragment"
+            android:text="@string/ibrahimTxtSpeed6s" />
 
         <RadioButton
-            android:id="@+id/ibrahimSpeedThree"
+            android:id="@+id/ibrahimSpeed4s"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="200px"
-            android:text="Three" />
+            style="@style/TxtDisplayAliFragment"
+            android:text="@string/ibrahimTxtSpeed4s" />
 
         <RadioButton
-            android:id="@+id/ibrahimSpeedFour"
+            android:id="@+id/ibrahimSpeed2s"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="200px"
-            android:text="Four" />
+            style="@style/TxtDisplayAliFragment"
+            android:text="@string/ibrahimTxtSpeed2s" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
