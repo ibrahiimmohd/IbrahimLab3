@@ -18,19 +18,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 public class S301022172Fragment extends Fragment {
-
+    //Declare variables
     ImageView moonImage, earthImage;
     Button startBtn, stopBtn;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
+        //Initialize variables
         View root = inflater.inflate(R.layout.fragment_s301022172, container, false);
         moonImage = (ImageView) root.findViewById(R.id.ibrahimMoonImg);
         earthImage = (ImageView) root.findViewById(R.id.ibrahimEarthImg);
-
-        // Handle Buttons
         startBtn = (Button) root.findViewById(R.id.ibrahimStartBtn);
+        stopBtn = (Button) root.findViewById(R.id.ibrahimStopBtn);
+
+        // Handle Buttons event onClick event listener
         startBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 performAnimationMoon(R.anim.moon);
@@ -38,7 +40,6 @@ public class S301022172Fragment extends Fragment {
             }
         });
 
-        stopBtn = (Button) root.findViewById(R.id.ibrahimStopBtn);
         stopBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 moonImage.clearAnimation();
@@ -51,7 +52,7 @@ public class S301022172Fragment extends Fragment {
 
     public void performAnimationMoon(int animationResourceID)
     {
-        // We will animate the imageview
+        // animate the imageview
         moonImage.setImageResource(R.drawable.moon);
         moonImage.setVisibility(View.VISIBLE);
 
@@ -60,20 +61,19 @@ public class S301022172Fragment extends Fragment {
 
         // Start the animation
         moonImage.startAnimation(an);
-
     }
 
 
     public void performAnimationEarth(int animationResourceID)
     {
-        // We will animate the imageview
+        // animate the imageview
         earthImage.setImageResource(R.drawable.earth);
         earthImage.setVisibility(View.VISIBLE);
 
         // Load the appropriate animation
         Animation earth =  AnimationUtils.loadAnimation(getActivity(), animationResourceID);
 
+        //Start animation
         earthImage.startAnimation(earth);
-
     }
 }

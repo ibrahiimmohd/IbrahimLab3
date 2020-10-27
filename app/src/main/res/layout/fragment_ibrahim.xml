@@ -75,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
+            style="@style/RadioDisplayIbrahimFragment"
             android:text="@string/ibrahimTxt10ft"></RadioButton>
 
         <RadioButton
@@ -82,6 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
+            style="@style/RadioDisplayIbrahimFragment"
             android:text="@string/ibrahimTxt20ft"></RadioButton>
 
 
@@ -90,6 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
+            style="@style/RadioDisplayIbrahimFragment"
             android:text="@string/ibrahimTxt30ft"></RadioButton>
     </RadioGroup>
 
@@ -107,6 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
+            style="@style/RadioDisplayIbrahimFragment"
             android:text="@string/ibrahimTxtBlack" />
 
         <RadioButton
@@ -114,6 +118,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
+            android:textColor="@color/colorGreen"
+            style="@style/RadioDisplayIbrahimFragment"
             android:text="@string/ibrahimTxtGreen" />
 
         <RadioButton
@@ -121,6 +127,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="300px"
+            android:textColor="@color/colorRed"
+            style="@style/RadioDisplayIbrahimFragment"
             android:text="@string/ibrahimTxtRed" />
     </RadioGroup>
 

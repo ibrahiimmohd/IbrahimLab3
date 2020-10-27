@@ -15,6 +15,12 @@
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
+    <style name="RadioDisplayIbrahimFragment">
+        <item name="android:textSize">@dimen/ibrahimTxtSizeType3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
     <style name="TxtDisplayAliFragment">
         <item name="android:textSize">@dimen/ibrahimTxtSizeType3</item>
         <item name="android:textStyle">bold</item>

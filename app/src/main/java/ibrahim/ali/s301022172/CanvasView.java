@@ -58,7 +58,6 @@ public class CanvasView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-
         // draw the mPath with the mPaint on the canvas when onDraw
         canvas.drawPath(mPath, mPaint);
     }
@@ -111,7 +110,6 @@ public class CanvasView extends View {
             mY = y;
         }
     }
-
 
     // when ACTION_UP stop touch
     private void upTouch() {

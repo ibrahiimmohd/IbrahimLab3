@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -24,6 +26,7 @@ import androidx.navigation.ui.NavigationUI;
 
 public class ibrahimActivity extends AppCompatActivity {
 
+    //Declare variables
     private CanvasView customCanvas;
     String paint, brush;
     RadioButton black, green, red;
@@ -48,7 +51,9 @@ public class ibrahimActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    //selectPaintBrush function
     public void selectPaintBrush(View view) {
+        //Initialize variables
         customCanvas = (CanvasView) findViewById(R.id.ibrahimCanvas);
         black = (RadioButton) findViewById(R.id.ibrahimPaintBlack);
         green = (RadioButton) findViewById(R.id.ibrahimPaintGreen);
@@ -57,6 +62,7 @@ public class ibrahimActivity extends AppCompatActivity {
         size20 = (RadioButton) findViewById(R.id.ibrahimBrush20ft);
         size30 = (RadioButton) findViewById(R.id.ibrahimBrush30ft);
 
+        //Perform actions based on selections
         if(black.isChecked()){
             paint = "black";
         }else if(green.isChecked()){
@@ -73,18 +79,23 @@ public class ibrahimActivity extends AppCompatActivity {
             brush = "30ft";
         }
 
-        if (brush != null && paint != null) {
-            customCanvas.radiosPaintBrushSelection(paint, brush);
-        }
+        //Default values
+        if(((RadioGroup) findViewById(R.id.ibrahimRadioGroupBrush)).getCheckedRadioButtonId() == -1) { brush = "10ft"; }
+
+        if(((RadioGroup) findViewById(R.id.ibrahimRadioGroupPaint)).getCheckedRadioButtonId() == -1){ paint = "black"; }
+
+        //Call function radiosPaintBrushSelection
+        customCanvas.radiosPaintBrushSelection(paint, brush);
     }
 
     public void selectSpeed(View view){
-
+        //Initialize variables
         rd1 = (RadioButton) findViewById(R.id.ibrahimSpeed8s);
         rd2 = (RadioButton) findViewById(R.id.ibrahimSpeed6s);
         rd3 = (RadioButton) findViewById(R.id.ibrahimSpeed4s);
         rd4 = (RadioButton) findViewById(R.id.ibrahimSpeed2s);
 
+        //Perform actions based on selections
         if(rd1.isChecked()){
             startAnimation(650);
         }else if(rd2.isChecked()){
@@ -93,11 +104,14 @@ public class ibrahimActivity extends AppCompatActivity {
             startAnimation(200);
         }else if(rd4.isChecked()){
             startAnimation(50);
+        }else{
+            Toast.makeText(this, R.string.ibrahimTxtPlsSelectSpeed, Toast.LENGTH_LONG).show();
         }
     }
 
     public void startAnimation(int speed)
     {
+        //Initialize vairables
         img = (ImageView) findViewById(R.id.ibrahimImageBird);
 
         BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.bird1);
@@ -130,17 +144,20 @@ public class ibrahimActivity extends AppCompatActivity {
         mframeAnimation.addFrame(frame11, reasonableDuration);
         mframeAnimation.addFrame(frame12, reasonableDuration);
 
-
+        //Set background image
         img.setBackground(mframeAnimation);
 
+        //Start animation
         mframeAnimation.setVisible(true,true);
         mframeAnimation.start();
     }
 
     public void stopAnimation(View view)
     {
+        //Initialize vairable
         img = (ImageView) findViewById(R.id.ibrahimImageBird);
 
+        //Stop animation
         mframeAnimation.stop();
         mframeAnimation.setVisible(false,false);
     }

@@ -21,7 +21,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 public class AliFragment extends Fragment {
-
+    //Declare variables
     final private int REQUEST_CODE_ASK_PERMISSIONS = 123;
     Intent intent;
     Button btnPhoneCall;
@@ -31,6 +31,7 @@ public class AliFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_ali, container, false);
 
+        //Btns onClick event
         btnPhoneCall = (Button) root.findViewById(R.id.ibrahimPhoneInsertBtn);
         btnPhoneCall.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,7 @@ public class AliFragment extends Fragment {
         return root;
     }
 
+    //checkPhoneCallPermission function
     private void checkPhoneCallPermission() {
         int hasWriteContactsPermission = 0;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
@@ -61,6 +63,5 @@ public class AliFragment extends Fragment {
 
     public void selectSpeed(View view){ }
 
-    public void stopAnimation(View view)
-    { }
+    public void stopAnimation(View view){ }
 }
