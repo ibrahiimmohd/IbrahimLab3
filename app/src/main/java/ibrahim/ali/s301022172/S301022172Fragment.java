@@ -1,4 +1,4 @@
-package ibrahim.ali.s301022172.ui.notifications;
+package ibrahim.ali.s301022172;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,9 +12,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import ibrahim.ali.s301022172.R;
-
-public class NotificationsFragment extends Fragment {
+public class S301022172Fragment extends Fragment {
 
     ImageView moonImage, earthImage;
     Button startBtn, stopBtn;
@@ -22,7 +20,7 @@ public class NotificationsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        View root = inflater.inflate(R.layout.fragment_s301022172, container, false);
         moonImage = (ImageView) root.findViewById(R.id.ibrahimMoonImg);
         earthImage = (ImageView) root.findViewById(R.id.ibrahimEarthImg);
 

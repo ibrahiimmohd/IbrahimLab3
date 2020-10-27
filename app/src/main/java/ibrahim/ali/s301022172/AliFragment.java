@@ -1,26 +1,21 @@
-package ibrahim.ali.s301022172.ui.dashboard;
+package ibrahim.ali.s301022172;
 
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.drawable.AnimationDrawable;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import ibrahim.ali.s301022172.R;
-
-public class DashboardFragment extends Fragment {
+public class AliFragment extends Fragment {
 
     final private int REQUEST_CODE_ASK_PERMISSIONS = 123;
     Intent intent;
@@ -29,7 +24,7 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        View root = inflater.inflate(R.layout.fragment_ali, container, false);
 
         btnPhoneCall = (Button) root.findViewById(R.id.ibrahimPhoneInsertBtn);
         btnPhoneCall.setOnClickListener(new View.OnClickListener() {

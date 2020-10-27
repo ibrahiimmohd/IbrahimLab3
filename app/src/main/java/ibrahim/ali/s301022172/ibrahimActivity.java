@@ -20,7 +20,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-public class MainActivity extends AppCompatActivity {
+public class ibrahimActivity extends AppCompatActivity {
 
     private CanvasView customCanvas;
     String paint, brush;

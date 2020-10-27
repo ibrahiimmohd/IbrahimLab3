@@ -1,7 +1,6 @@
-package ibrahim.ali.s301022172.ui.home;
+package ibrahim.ali.s301022172;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import ibrahim.ali.s301022172.CanvasView;
-import ibrahim.ali.s301022172.R;
-
-public class HomeFragment extends Fragment{
+public class IbrahimFragment extends Fragment{
 
     private CanvasView customCanvas;
     RadioButton black, green, red;
@@ -25,7 +21,7 @@ public class HomeFragment extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        View root = inflater.inflate(R.layout.fragment_ibrahim, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
 
         textView.setText("Ibrahim Ali 301022172");
