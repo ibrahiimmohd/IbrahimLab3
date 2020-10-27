@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/ibrahimIbrahimFragment">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/ibrahimIbrahimFragment"
         android:name="ibrahim.ali.s301022172.IbrahimFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_ibrahim_fragment"
         tools:layout="@layout/fragment_ibrahim" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/ibrahimNavAliFragment"
         android:name="ibrahim.ali.s301022172.AliFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_ali_fragment"
         tools:layout="@layout/fragment_ali" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/ibrahimNavS301022172Fragment"
         android:name="ibrahim.ali.s301022172.S301022172Fragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_s301022172_fragment"
         tools:layout="@layout/fragment_s301022172" />
 </navigation>
