@@ -45,7 +45,7 @@
         android:text="@string/ibrahimTxtClearCanvas"
         app:layout_constraintBottom_toBottomOf="@+id/ibrahimCanvas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -58,7 +58,7 @@
         android:text="@string/ibrahimTxtSelectPB"
         app:layout_constraintBottom_toBottomOf="@+id/ibrahimCanvas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
